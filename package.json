@@ -1,0 +1,21 @@
+{
+  "name": "Desktop",
+  "version": "0.0.0",
+  "description": "create package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intanrahayu/nana"
+  },
+  "keywords": [
+    "intan"
+  ],
+  "author": "intanrahayu",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/intanrahayu/nana/issues"
+  }
+}
