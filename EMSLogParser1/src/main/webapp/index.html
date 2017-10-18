@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>EMS Log Parser</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+	<script>
+	function validateForm() {
+    var x = document.forms["myForm"]["name"].value;
+    if (x == "") {
+        alert("Trade ID must be filled out");
+        return false;
+    	}
+	}
+	</script>
+</head>
+
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12" style="background-color:#004d39;">
+			<font color=white><h3><b>EMS Log Parser</b></h3>
+				<p>Input your Trade ID</p>
+				<form name="myForm" action = "./HelloServlet" method = "GET" onsubmit="return validateForm()">
+					<div class="form-group">
+					<b>Trade ID:</b><input type="text" name="name" class="form-control">
+					</div>
+					<input type="submit" name="process" value="Process" class="btn btn-info">
+					<input type="reset" value="Reset" class="btn btn-warning"><br><br>
+				</form>
+			</font>
+		</div>
+	</div>
+</div>
+
+  
+</body>
+ 
+</html>
